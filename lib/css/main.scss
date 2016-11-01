@@ -1,2 +1,51 @@
 @import 'pages/gallery';
 @import 'helpers/variables';
+
+body,div,ul,li,h1,h2,h3,h4,h5,h6 { 
+    margin:0;
+    padding:0;
+}
+
+header {
+	h1 {
+		display: inline;
+	}
+}
+
+nav {
+  ul {
+		list-style-type: none;
+		background-color: green;
+	}
+
+	li {
+		display: inline;
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:hover:not(.currentPage) {
+    background-color: blue;
+	}
+
+	.currentPage {
+		background-color: red;
+	}
+}
+
+footer {
+  ul {
+		list-style-type: none;
+	}
+
+	li {
+		display: inline;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
