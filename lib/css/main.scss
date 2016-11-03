@@ -7,38 +7,56 @@ body,div,ul,li,h1,h2,h3,h4,h5,h6 {
 }
 
 header {
+  background:url(../img/octocat.png);
+  background-repeat: no-repeat;
+  background-color: $octocatBackgroundColor;
+
+  padding: $headerPaddingTop 0 0 145px;
+  height: 234 - $headerPaddingTop;
+
 	h1 {
 		display: inline;
 	}
 }
 
 nav {
+
   ul {
 		list-style-type: none;
-		background-color: green;
+		overflow: hidden;
+		background-color: $octocatComplementaryColor;
 	}
 
 	li {
-		display: inline;
+		display: inline-block;
+		// float left to remove small space appearing between list items
+		float: left;
+		padding: 10px 0;
 	}
 
 	a {
-		color: black;
 		text-decoration: none;
+		color: black;
+		font-size: 2em;
+		padding: 10px 10px;
 	}
-	
+
 	a:hover:not(.currentPage) {
-    background-color: blue;
+    background-color: $octocatDarkColor;
 	}
 
 	.currentPage {
-		background-color: red;
+		background-color: #B16B97;
 	}
 }
 
 footer {
+	background-color: $octocatBackgroundColor;
+	margin-top: 20px;
+
   ul {
 		list-style-type: none;
+		padding-right: 15px;
 	}
 
 	li {
@@ -47,5 +65,21 @@ footer {
 
 	a {
 		text-decoration: none;
+		color: black;
+	}
+
+	@media screen and (min-width: $desktopWidth) {
+		text-align: right;
+	}
+
+	@media screen and (max-width: $desktopWidth - 1) {
+		ul {
+			display: table;
+			width: 100%;
+		}
+		li {
+			display: table-cell;
+			text-align: center;
+		}
 	}
 }

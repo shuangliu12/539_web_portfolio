@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,aAAc,CACb,KAAK,CAAE,GAAG,CACV,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CAElB,iBAAI,CACH,KAAK,CAAE,IAAI",
+"sources": ["_gallery.scss"],
 "names": [],
 "file": "_gallery.css"
 }
