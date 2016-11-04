@@ -1,2 +1,2 @@
-.illustration{width:50%;margin-left:auto;margin-right:auto}.illustration img{width:100%}
+.gallery_image{margin-top:15px;background-color:white;border:1px solid gray;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;margin-left:auto;margin-right:auto}@media screen and (min-width: 992px){.gallery_image{width:50%}}@media screen and (min-width: 768px) and (max-width: 991px){.gallery_image{width:75%}}@media screen and (max-width: 767px){.gallery_image{width:100%}}.gallery_image p{padding-top:10px;padding-bottom:10px}.gallery_image img{width:100%;padding-bottom:10px}.oil_paintings p{padding-left:10%}
 /*# sourceMappingURL=_gallery.css.map */

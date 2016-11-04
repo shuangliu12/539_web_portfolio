@@ -1,9 +1,38 @@
-.illustration {
-	width: 50%;
+@import '../helpers/variables';
+
+.gallery_image {
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  // these vendor prefixes make sure the border is included in the width percentage
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+	@media screen and (min-width: $desktopWidth) {
+  	width: 50%;
+	}
+  @media screen and (min-width: $tabletWidth) and (max-width: $desktopWidth - 1) {
+  	width: 75%;
+  }
+  @media screen and (max-width: $tabletWidth - 1) {
+		width: 100%;
+	}
 	margin-left: auto;
 	margin-right: auto;
 
+	p {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
 	img {
 		width: 100%;
+		padding-bottom: 10px;
 	}
+}
+
+.oil_paintings p {
+	padding-left: 10%;
 }
