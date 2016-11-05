@@ -15,11 +15,6 @@
 .gallery_image {
   margin-top: 15px;
   background-color: white;
-  // these vendor prefixes make sure the border is included in the width percentage
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 
   @include resize;
 
